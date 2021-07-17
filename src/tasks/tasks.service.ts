@@ -5,6 +5,7 @@ import { GetTasksFilterDto } from './dto/get-tasks.dot';
 import { InjectRepository } from '@nestjs/typeorm';
 import { TasksRepository } from './tasks.repository';
 import { Task } from './task.entity';
+import { User } from 'src/auth/user.entity';
 
 @Injectable()
 export class TasksService {
@@ -25,27 +26,6 @@ export class TasksService {
     return found;
   }
 
-  // getTasksWithFilters(filterDto: GetTasksFilterDuo): Task[] {
-  //   const { status, search } = filterDto;
-  //   //define a temp arr
-  //   let tasks = this.getAllTasks();
-  //   if (status) {
-  //     tasks = tasks.filter((task) => task.status === status);
-  //   }
-  //   if (search) {
-  //     tasks = tasks.filter((task) => {
-  //       if (
-  //         task.title.toLowerCase().includes(search) ||
-  //         task.description.toLowerCase().includes(search)
-  //       ) {
-  //         return true;
-  //       }
-  //       return false;
-  //     });
-  //   }
-  //   return tasks;
-  // }
-
   async deleteTask(id: string): Promise<void> {
     const result = await this.tasksRepository.delete(id);
     if (result.affected === 0) {
@@ -53,8 +33,8 @@ export class TasksService {
     }
   }
 
-  async createTask(createTaskDto: CreateTaskDto): Promise<Task> {
-    return this.tasksRepository.createTask(createTaskDto);
+  async createTask(createTaskDto: CreateTaskDto, user: User): Promise<Task> {
+    return this.tasksRepository.createTask(createTaskDto, user);
   }
 
   async updateTaskStatus(id: string, status: TaskStatus): Promise<Task> {

@@ -29,7 +29,7 @@ export class TasksRepository extends Repository<Task> {
 
   async createTask(createTaskDto: CreateTaskDto) {
     const { title, description } = createTaskDto;
-    //obj to match props defined in the entity
+    //obj to match props defined in user.entity
     const task = this.create({
       title,
       description,

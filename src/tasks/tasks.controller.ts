@@ -25,7 +25,6 @@ export class TasksController {
   private logger = new Logger('TasksController');
   constructor(private tasksService: TasksService) {}
 
-  //all or filtered
   @Get()
   getTasks(
     @Query() filterDto: GetTasksFilterDto,

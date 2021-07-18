@@ -9,7 +9,7 @@ export class AuthCredentialsDto {
   @IsString()
   @MinLength(8)
   @MaxLength(20)
-  //pass contains -> 1 upper case, 1 lower case, 1 num or special char,else error msg
+  //pass must contain -> 1 upper case, 1 lower case, 1 num or special char,else error msg
   @Matches(/((?=.*\d)|(?=.\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/, {
     message: 'password is too weak',
   })

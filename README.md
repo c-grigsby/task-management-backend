@@ -28,11 +28,11 @@
 
 - This application is the back-end to the task management application
 
-- [Live Demo of Task Management Application](https://grigsby9.github.io/task-management-frontend/)
+- [Live Demo of Task Management App](https://grigsby9.github.io/task-management-frontend/)
 
 ## Project Specifications
 
-- Provides a REST API to handle the management of user defined tasks
+- REST API to handle the management of user defined tasks
 - Persists data on PostgreSQL via Docker
 - Authentication & Authorization
 - Distributes JSON Web Tokens (JWTs)
@@ -43,7 +43,7 @@
 
 #
 
-#### Note: Users must sign-up to create an account to utilize the application
+#### Note: Authentication is required to utilize the application
 
 #
 

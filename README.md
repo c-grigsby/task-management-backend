@@ -43,7 +43,7 @@
 
 #
 
-#### Note: Users must sign-up to create an account to utilize the application
+#### Note: Authentication is required to utilize the application
 
 #
 

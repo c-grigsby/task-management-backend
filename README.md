@@ -41,9 +41,11 @@
 - Utilizes TypeORM
 - Front-end integration
 
+Link to [front-end repository](https://github.com/grigsby9/task-management-frontend)
+
 #
 
-#### Note: Authentication is required to utilize the application
+##### Note: First time users of the app are required to utilize the sign-up feature
 
 #
 

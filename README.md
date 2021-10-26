@@ -45,7 +45,7 @@ Link to [front-end repository](https://github.com/grigsby9/task-management-front
 
 #
 
-##### Note: First time users of the app are required to utilize the sign-up feature
+#### Note: First time users of the app are required to utilize the sign-up feature
 
 #
 
@@ -81,6 +81,8 @@ $ npm run test:e2e
 $ npm run test:cov
 
 ```
+
+---
 
 ## Support
 

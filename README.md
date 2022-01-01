@@ -41,6 +41,7 @@
 - Task Ownership and Restrictions
 - Utilizes TypeORM
 - Front-end integration
+- Deployed to Heroku
 
 Link to [front-end repository](https://github.com/grigsby9/task-management-frontend)
 

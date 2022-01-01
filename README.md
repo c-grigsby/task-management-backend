@@ -26,7 +26,7 @@
 
 # Task Management Application Back-end
 
-- This application is the back-end to the task management application
+- This application is the back-end to the task management web application
 
 - [Live Demo of Task Management App](https://grigsby9.github.io/task-management-frontend/)
 
@@ -36,6 +36,7 @@
 - Persists data on PostgreSQL via Docker
 - Authentication & Authorization
 - Distributes JSON Web Tokens (JWTs)
+- Performs CRUD operations upon persisted data 
 - Pipes for Validation and Error Handling
 - Task Ownership and Restrictions
 - Utilizes TypeORM
@@ -45,9 +46,14 @@ Link to [front-end repository](https://github.com/grigsby9/task-management-front
 
 #
 
-#### Note: First time users of the app are required to utilize the sign-up feature
+#### Note: First-time users of the application are required to utilize the sign-up feature
 
 #
+
+## Task Management App URL
+- https://grigsby9.github.io/task-management-frontend/#/
+
+---
 
 ## Installation
 
@@ -90,8 +96,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
-
-```
-
-```
+Nest is [MIT licensed](LICENSE)

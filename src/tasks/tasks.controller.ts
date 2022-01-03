@@ -1,3 +1,5 @@
+import { AuthGuard } from '@nestjs/passport';
+import { CreateTaskDto } from './dto/create-task.dto';
 import {
   Body,
   Controller,
@@ -9,15 +11,13 @@ import {
   Query,
   UseGuards,
 } from '@nestjs/common';
-import { CreateTaskDto } from './dto/create-task.dto';
 import { GetTasksFilterDto } from './dto/get-tasks.dot';
-import { UpdateTaskStatusDto } from './dto/update-task-status.dto';
-import { TasksService } from './tasks.service';
-import { Task } from './task.entity';
-import { AuthGuard } from '@nestjs/passport';
 import { GetUser } from 'src/auth/get-user.decorator';
-import { User } from 'src/auth/user.entity';
 import { Logger } from '@nestjs/common';
+import { Task } from './task.entity';
+import { TasksService } from './tasks.service';
+import { UpdateTaskStatusDto } from './dto/update-task-status.dto';
+import { User } from 'src/auth/user.entity';
 
 @Controller('tasks')
 @UseGuards(AuthGuard())

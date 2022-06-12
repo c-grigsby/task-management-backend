@@ -26,12 +26,13 @@
 
 # Task Management Application Back-end
 
-- This application is the back-end to the task management web application
+- This server-side application is the backend to the task management web application
 
-- [Live Demo of Task Management App](https://grigsby9.github.io/task-management-frontend/)
+- [Live Demo of Task Management App](https://c-grigsby.github.io/task-management-frontend/)
 
 ## Project Specifications
 
+- Developed in TypeScript with NestJS a Node.js framework
 - REST API to handle the management of user defined tasks
 - Persists data on PostgreSQL via Docker
 - Authentication & Authorization
@@ -41,9 +42,9 @@
 - Task Ownership and Restrictions
 - Utilizes TypeORM
 - Front-end integration
-- Deployed to Heroku
+- Deployed to [Heroku](https://www.heroku.com/)
 
-Link to [front-end repository](https://github.com/grigsby9/task-management-frontend)
+Link to [front-end repository](https://github.com/c-grigsby/task-management-frontend)
 
 #
 
@@ -52,7 +53,7 @@ Link to [front-end repository](https://github.com/grigsby9/task-management-front
 #
 
 ## Task Management App URL
-- https://grigsby9.github.io/task-management-frontend/#/
+- https://c-grigsby.github.io/task-management-frontend/#/
 
 ---
 
